@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro";
+  src: url("../ITC\ Avant\ Garde\ Gothic\ Pro/ITCAvantGardePro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../Avenir.ttc");
+}
+
+body {
+  margin: 0px;
+}
+
+.box {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+}
+
+.lifestyle {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: url("../../images/bg.png");
+  background-size: cover;
+}
+
+.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 48px;
+  top: 541px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.top_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header {
+  padding-left: 120px;
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
+  padding-right: 106px;
+
+  font-family: "ITC Avant Garde Gothic Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 130%;
+}
+
+.description {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+  padding-right: 168px;
+}
+
+.shop_button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.button_text {
+  width: 146px;
+  height: 17px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12.8px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button_line {
+  width: 146px;
+  height: 1px;
+  background: #000000;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.top_cards {
+  width: 100%;
+  overflow: auto;
+}
+
+.top_cards::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.top_cards::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+.top_cards::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.product_card {
+  width: 230px;
+  height: 45vh;
+  margin-top: 68px;
+  padding-right: 32px;
+}
+
+.scroll {
+  padding-left: 120px;
+  display: flex;
+  flex-direction: row;
+}
+
+.product__card {
+  width: 230px;
+  height: 310px;
+}
+
+.product__details {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__image {
+  width: 230px;
+  height: 310px;
+}
+
+.product__title {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 160%;
+}
+
+.product__price {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8px;
+  line-height: 160%;
+}
+
+.product__price__color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product__colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product_colors_1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #99c4cc;
+  margin-right: 8px;
+}
+
+.product_colors_2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #cc9999;
+  margin-right: 8px;
+}
+
+.product_colors_3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #cb99cc;
+  margin-right: 8px;
+}
+
+.product_colors_4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #a6cc99;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+  }
+
+  .image {
+    width: 100vw;
+    height: 58vh;
+    position: absolute;
+  }
+
+  .lifestyle {
+    width: 100vw;
+    height: 58vh;
+  }
+
+  .bg {
+    width: 100vw;
+    height: 58vh;
+    background: url("../../images/bg.png");
+
+    background-size: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .title span {
+    display: none;
+  }
+
+  .product__title span {
+    display: none;
+  }
+
+  .product__title::after {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+    content: "Organic Skinny High Waist Raw Hem Jeans";
+  }
+
+  .title::after {
+    position: absolute;
+    width: 312px;
+    height: 78px;
+    left: 24px;
+    top: 248px;
+    font-family: "ITC Avant Garde Gothic Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #ffffff;
+    content: "Everyday tops, we have something to suit every occasion.";
+  }
+
+  .description {
+    display: none;
+  }
+
+  .button_text {
+    width: 146px;
+    height: 17px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-bottom: 1px solid white;
+  }
+
+  .shop_button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 146px;
+    height: 23px;
+    left: 24px;
+    top: 342px;
+  }
+
+  .scroll {
+    position: absolute;
+
+    left: 0px;
+    top: 397px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 24px;
+    width: 90%;
+  }
+  .product_card {
+    width: 148px;
+    height: 45vh;
+    margin-top: 0px;
+    padding-right: 12px;
+  }
+  .top_cards {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  .scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  .product__image {
+    width: 148px;
+    height: 200px;
+  }
+  .button {
+    display: none;
+  }
+  .product__card {
+    width: 148px;
+    height: 200px;
+  }
+  .product__price__color {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .product__colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
